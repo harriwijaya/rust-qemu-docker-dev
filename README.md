@@ -35,3 +35,17 @@ Then restart with
 docker compose start
 ```
 
+## Few checks
+
+Create sample program:
+```
+cargo new hello-rust --bin
+cd hello-rust
+cargo build
+./target/debug/hello-rust
+```
+
+Check if QEMU is installed:
+```
+ls /usr/bin/qemu-system-*
+```
