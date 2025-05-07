@@ -1,0 +1,13 @@
+services:
+  dev:
+    build: .
+    volumes:
+      - .:/workspace
+      - cargo-cache:/usr/local/cargo/registry
+    tty: true
+    stdin_open: true
+    container_name: rust-qemu-dev
+    working_dir: /workspace
+
+volumes:
+  cargo-cache:
